@@ -47,6 +47,10 @@ extension FixedWidthInteger {
     }
 }
 
+extension Bool {
+    static var random: Bool { return Int.random(2) == 1 }
+}
+
 extension Array {
     
     public init(count: Int, each: (Int) -> Element) {

@@ -69,7 +69,7 @@ extension Array {
         var result: [Element] = []
         while !indexes.isEmpty {
             let element = indexes.remove(at: Int.random(indexes.count))
-            result.append(element)
+            result.append(self[element])
         }
         return result
     }
